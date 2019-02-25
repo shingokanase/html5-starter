@@ -1,0 +1,74 @@
+{
+  "name": "kanase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "build": "gulp build --env=production",
+    "build:watch": "gulp --env=production",
+    "img": "gulp img --env=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "kanase",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.18.8",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-data": "^1.2.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-progeny": "^0.4.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^6.0.1",
+    "jquery": "^3.3.1",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta.12",
+    "remodal": "^1.1.1",
+    "require-dir": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "sort-css-media-queries": "^1.4.3",
+    "swiper": "3.4.2",
+    "webpack": "^4.26.1",
+    "webpack-stream": "^5.1.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "ie": 11
+          },
+          "useBuiltIns": "usage"
+        }
+      ]
+    ]
+  }
+}

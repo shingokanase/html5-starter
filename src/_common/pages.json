@@ -1,0 +1,23 @@
+{
+  "og_locale": "ja_JP",
+  "index": {
+    "title": "ページタイトル",
+    "description": "ディスクリプション",
+    "keywords": "",
+    "og_title": "ページタイトル",
+    "og_description": "ディスクリプション",
+    "og_type": "website",
+    "og_url": "http://",
+    "og_site_name": "ページタイトル"
+  },
+  "under_index": {
+    "title": "下層ページタイトル | ページタイトル",
+    "description": "ディスクリプション",
+    "keywords": "",
+    "og_title": "下層ページタイトル | ページタイトル",
+    "og_description": "ディスクリプション",
+    "og_type": "article",
+    "og_url": "http://",
+    "og_site_name": "下層ページタイトル | ページタイトル"
+  }
+}

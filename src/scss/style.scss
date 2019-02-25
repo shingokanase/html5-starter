@@ -1,0 +1,15 @@
+// @charset "UTF-8";
+@import "../_common/scss/libs/sanitize";
+@import "../_common/scss/libs/minireset";
+@import "../_common/scss/mixin";
+@import "../_common/scss/base";
+@import "../_common/scss/setting";
+@import "../_common/scss/common";
+@import "../_common/scss/header";
+@import "../_common/scss/footer";
+
+// 以下各ページ
+// TOP
+@import "top";
+// UNDER
+@import "under/under";

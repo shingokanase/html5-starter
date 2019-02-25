@@ -1,0 +1,67 @@
+// 文字中央寄せ
+@mixin center {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+// 文字中央寄せ
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-bt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin noto {
+  // font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// メディアクエリ
+$mq-breakpoints: (
+  "xsmall": 320px,
+  "iphone6": 375px,
+  "iphone6s": 414px,
+  "small": 500px,
+  "medium": 768px,
+  "main": 950px,
+  "large": 1024px,
+  "xlarge": 1280px
+);
+
+@mixin mq($breakpoint: medium, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+
+  @if $rule==max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}

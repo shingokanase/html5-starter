@@ -1,6 +1,6 @@
 # 推奨環境
 
-- node LTS 8.11.2以上
+- node LTS 8.11.2 以上
 - npm 5.2.0 以上
 - VS CODE
 - Prettier
@@ -9,8 +9,7 @@
 
 ---
 
-
-##  開発サーバー立ち上げ
+## 開発サーバー立ち上げ
 
 ```
 npx gulp
@@ -48,9 +47,11 @@ npx gulp --tasks
 ├── clean
 ├── copy
 ├── default
+├── img
 ├── pug
 ├── sass
 ├── server
 ├── reload
 └── watch
-~~~
+└── webpack
+```
